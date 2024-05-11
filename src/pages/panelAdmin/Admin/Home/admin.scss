@@ -1,0 +1,299 @@
+@import '../../../../components/pallet.scss';
+.admin-panel{
+    border: none;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    text-shadow: 2px 2px 9px rgba(151, 150, 150, 0.233);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+
+        .left-nav{
+            width: 15%;
+            height: 100vh;
+            position: fixed;
+            background: $couleur1;
+            padding: 1% 2% 1% 2%;
+            transition: ease all 0.4s;
+
+            .head{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 40px;
+                align-items: center;
+                color: $couleur2;
+
+                .Logo{
+                    font-size: 24px;
+                    font-weight: bold;
+
+                }
+                .Menu{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+                .trait{
+                    width: 30px;
+                    height: 5px;
+                    background: $couleur2;
+                    border-radius: 24px;
+                }
+                }
+            }
+
+            .optionMenu{
+                margin-top: 30%;
+                list-style: none;
+                 
+                ul{ 
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    color: $couleur2;
+
+                    .menuItem{
+                        display: flex;
+                         gap: 10px;
+                        padding-bottom: 3%;
+                        border-bottom: 1px solid $couleur3;
+                        align-items: center;
+
+                        .Icon{
+                            width: 20px;
+                            height: 20px;
+                            color: $couleur2;
+                        }
+                       
+                        &:hover,:focus{
+                            border-radius: 24px;
+                            color: $couleur1;
+                            background: $couleur2;
+                            width: 108%;
+                            padding: 4% 6%;
+                            cursor: pointer;
+
+                            .Icon{
+                                color: $couleur1;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        
+        .top-nav{
+            background: $couleur2;
+            width: 81%;
+            margin-left: 19%;
+            height: 50px;
+            position:fixed;
+            box-shadow: 2px 2px 9px rgba(95, 94, 94, 0.37);
+            
+
+            nav{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 1% 2%;
+
+                .hello{
+                    font-size: 24px;
+                    line-height: 1.2em;
+                    font-weight: 400;
+                    color: rgb(27, 27, 27);
+
+                    .userName{
+                        color: $couleur1;
+                    }
+
+                   
+                }
+                .search{
+                    width: 20%;
+                    border: 1px solid $couleur3;
+                    border-radius: 12px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0.5%;
+                   
+                
+        
+                    input{
+                        border: none;
+                        padding: 1%;
+                        outline: none;
+                        width: 90%;
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                    }
+                }
+
+                .btnPremieum{
+                    color: $couleur1;
+                    line-height: 1.2em;
+                    font-weight: 400;
+                    text-decoration: dashed;
+                    cursor: pointer;
+
+                }
+                .notifications{
+                    display: flex;
+                    flex-direction: row;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .nbr{
+                        color: $couleur1;
+                        line-height: 1.2em;
+                        font-weight: 400;
+                        margin-bottom: 3%;
+                        margin-left: -3%;
+                    
+                    }
+                }
+
+                .imgProfil{
+                   margin-right: 5%;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menuGroup{
+    padding: 3% 1%;
+    display: flex;
+    width: 78%;
+    height: auto;
+    margin-left: 20%;
+    border-radius: 24px;
+    background: rgba(204, 224, 248, 0.301);
+    margin-top: 55px;
+    transition:"ease alss 1s";
+}
+
+.bigMenuGroup{
+    padding: 3% 1%;
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin-left: 7%;
+    border-radius: 24px;
+    background: rgba(204, 224, 248, 0.301);
+    margin-top: 55px;
+    transition:"ease alss 1s";
+}
+
+.dashboard-container{
+    display: flex;
+    justify-content: space-between;
+    .bloc1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h1{
+            font-size: 24px;
+            color: $couleur1;
+            line-height: 1.2em;
+            font-weight: 700;
+
+        }
+        img{
+            width: 500px;
+            height: 300Px;
+            border-radius: 24px;
+        }
+    }
+
+    .bloc2{
+        display: flex;
+        flex-direction: column;
+
+        .boxHot{
+            background: $couleur2;
+            box-shadow: $shadow;
+            border-radius: 24px;
+            padding: 1% 2%;
+            align-items: center;
+            .hotBan img{
+                width: 300px;
+                height: 200px;
+                border-radius: 24px;
+            }
+
+            .hotsItems{
+                display: flex;
+                flex-direction: column;
+
+                table{
+                   
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                    .niv1{
+                        width: 200px;
+                        height: 10px;
+                        border-radius: 24px;
+                        background: $couleur3;
+
+                        .niv2{
+                            width: 70%;
+                            height: 10px;
+                            border-radius: 24px;
+                            background: $couleur1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+
+
+.ItemSelect{
+    display: flex;
+    gap: 10px;
+   padding-bottom: 3%;
+   border-radius: 24px;
+   color: $couleur1;
+   background: $couleur2;
+   width: 108%;
+   padding: 4% 6%;
+   cursor: pointer;
+   align-items: center;
+
+   .Icon{
+       width: 20px;
+       height: 20px;
+       color: $couleur1;
+   }
+}
+
+

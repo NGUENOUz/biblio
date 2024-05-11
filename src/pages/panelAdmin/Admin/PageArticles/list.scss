@@ -1,0 +1,220 @@
+@import '../../../../components/pallet.scss';
+
+.articlesContainer{
+    width: 98%;
+    height: auto;
+    
+ .topElement{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+
+      .btnAdd{
+        padding: 1% 2%;
+        color: $couleur2;
+        border-radius: 12px;
+        background: $couleur1;
+        cursor: pointer;
+      }
+    }
+
+    .container{
+
+      display: 	flex;
+      flex-direction: column;
+      padding-left: 2%;
+      overflow: hidden;
+        .articlesNav{
+        padding-top: 2%;
+          padding-bottom: 2%;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            width: 98%;
+          
+            height: auto;
+
+            .articlesGroup{
+              width: 20%;
+              display: flex;
+              align-items: center;
+              justify-content: ce;
+            padding:1% 2%;
+            color:$noir;
+            border: none;
+            border-radius: 12px;
+            background: $couleur2;
+            gap: 4px;
+
+            .Icon{
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              padding: 2%;
+              background: $couleur1;
+            }
+
+            &:hover{
+              color:$couleur2;
+              background: $noir;
+            }
+
+
+            }
+        }
+
+        .cartBox{
+          padding: 2%;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          width: 98%;
+          height: auto;
+          height: auto;
+          justify-content: center;
+          flex-wrap: wrap;
+          
+          
+          .cart{
+
+            width: 98%;
+            height: auto;
+            display: flex; 
+            justify-content: space-between;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background: $couleur2;
+            gap: 10px;
+
+            .imgPreview{
+              width: 28%;
+              height: 30%;
+              object-fit: cover;
+              padding: 2% 1% 1% 2%;
+               
+              img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            
+            .cartDescription{
+              padding: 2% 1% 3% 0%;
+             
+              .cartHead{
+                 .cartTitle{
+                  display: flex;
+                  justify-content: space-between;
+                  width: 98%;
+                    h1{
+                      font-size: 18px;
+                    }
+                    .IconShare{
+                      border-radius: 50%;
+                      box-shadow: 2px 2px 9px rgba(173, 173, 173, 0.356);
+                      width: 20px;
+                      height: 20px;
+                    }
+                 }
+                .b2 {
+                 
+                  .indice{
+                    padding: 1%;
+                   display: flex;
+                    align-items: center;
+                    gap: 2px;
+
+                    .Icons{
+                      color: $couleur1;
+                      opacity: 50%;
+                    }
+                   
+
+                  }
+                  display: flex;
+                  gap: 20px;
+                  align-items: center;
+                 
+                  .date{
+                    font-style: italic;
+                    color: $couleur3;
+  
+                  }
+                  .btnCommentaire{
+                    margin-left: 15%;
+                    &:hover{
+                      color: $couleur1;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              
+                
+                
+              }
+              .boxDescription{
+                gap:3px;
+                h3{
+                  font-size: 16px;
+                }
+                p{
+                  margin-top: 2%;
+                  color: gray;
+                  line-height: 1.1em;
+                }
+              }
+              .btnContainer{
+                display: flex;
+                flex-direction: row;
+                float: right;
+                 gap: 10px;
+                
+
+                 .btn{
+                  position: absolute;
+                  margin-left: -12%;
+                  font-size: 16px;
+                  border-radius: 12px;
+                  border: 1px solid $couleur3;
+                  align-items: center;
+                  display: flex;
+                  flex-direction: row;
+                   
+                 }
+                 .btnEdit{
+                  cursor: pointer;
+                  margin-top: 1%;
+                  margin-left: -22% !important;
+                  background: $couleur2;
+                  padding: 0.5% 1%;
+
+                  &:hover{
+                    color: $couleur2;
+                    background: $couleur3;
+                  }
+                 
+                }
+                .btnDelete{
+                  cursor: pointer;
+                  margin-top: 1%;
+                  background: $couleur2;
+                  padding: 0.5% 1%;
+
+                  
+                  &:hover{
+                    color: $couleur2;
+                    background: $couleur3;
+                  }
+                }
+              }
+
+             
+            }
+          }
+        }
+    }
+}
+

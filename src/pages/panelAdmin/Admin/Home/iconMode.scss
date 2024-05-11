@@ -1,0 +1,192 @@
+@import '../../../../components/pallet.scss';
+.iconMode{
+    width: 2%;
+    height: 100vh;
+    background: $couleur1;
+    transition: ease-in-out all 1s;
+    padding: 1% 2% 1% 2%;
+    position: fixed;
+
+    .head{
+        display: flex;
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        color: $couleur2;
+
+        .Logo{
+           display: none;
+
+        }
+        .Menu{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        .trait{
+            width: 30px;
+            height: 5px;
+            background: $couleur2;
+            border-radius: 24px;
+        }
+        }
+    }
+
+    .optionMenu{
+        margin-top: 100%;
+        list-style: none;
+         
+        ul{ 
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            color: $couleur2;
+
+            .menuItem{
+                display: flex;
+                 gap: 10px;
+                padding-bottom: 3%;
+                border-bottom: 1px solid $couleur3;
+                align-items: center;
+
+                .Icon{
+                    width: 20px;
+                    height: 20px;
+                    padding-right: 20%;
+                    color: $couleur2;
+                }
+               
+                &:hover,:focus{
+                    border-radius: 50px;
+                    color: $couleur1;
+                    background: $couleur2;
+                    width: 100%;
+                    padding: 10% 10%;
+                    cursor: pointer;
+
+                    .Icon{
+                        color: $couleur1;
+                    }
+                }
+            }
+
+            .ItemSelect{
+                display: flex;
+                gap: 10px;
+               padding-bottom: 3%;
+               border-radius: 24px;
+               color: $couleur1;
+               background: $couleur2;
+               width: 220%;
+               padding: 10% 16%;
+               cursor: pointer;
+               align-items: center;
+               transition: ease all 1s;
+            
+               .Icon{
+                   width: 20px;
+                   height: 20px;
+                   color: $couleur1;
+                   
+               }
+            }
+            
+
+        }
+    }
+  
+    .iconM{
+      display: none;
+    }
+  }
+
+
+  // partir pour le header
+
+  .bigTopBar{
+    transition: ease-in-out all 1s;
+    background: $couleur2;
+    width: 95%;
+    margin-left: 6%;
+    height: 50px;
+    position:fixed;
+    box-shadow: 2px 2px 9px rgba(95, 94, 94, 0.37);
+    
+
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1% 2%;
+
+        .hello{
+            font-size: 24px;
+            line-height: 1.2em;
+            font-weight: 400;
+            color: rgb(27, 27, 27);
+
+            .userName{
+                color: $couleur1;
+            }
+
+           
+        }
+        .search{
+            width: 20%;
+            border: 1px solid $couleur3;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0.5%;
+           
+        
+
+            input{
+                border: none;
+                padding: 1%;
+                outline: none;
+                width: 90%;
+            }
+            img{
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .btnPremieum{
+            color: $couleur1;
+            line-height: 1.2em;
+            font-weight: 400;
+            text-decoration: dashed;
+            cursor: pointer;
+
+        }
+        .notifications{
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            .nbr{
+                color: $couleur1;
+                line-height: 1.2em;
+                font-weight: 400;
+                margin-bottom: 3%;
+                margin-left: -3%;
+            
+            }
+        }
+
+        .imgProfil{
+           margin-right: 5%;
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

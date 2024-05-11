@@ -1,0 +1,280 @@
+@import "../../components/pallet.scss";
+
+.detailContainer{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.pictDetails{
+    margin-top: 9%;
+    width: 100%;
+   
+    .preview{
+       @include layout;
+       border-radius: 24px;
+       display: flex;
+       flex-direction: column;
+       width: 89%;
+       gap: 10px;
+
+       .cart{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+      
+
+        .imgPreview{
+            width: 90%;
+            height: 90%;
+          
+            object-fit: cover;
+
+             img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 24px;
+                border-bottom-left-radius: 24px;
+             }
+
+        }
+        .imgDescription {
+                  
+          display: flex;
+          gap: 10PX;
+          flex-direction: column;
+            .btnContainer{
+                display: flex;
+                justify-content: space-between;
+                width: 98%;
+                height: auto;
+                border-bottom: 1px solid $couleur1 ;
+                align-items: center;
+                padding:2%;
+                margin-left: -2%;
+    
+               
+                
+    
+                .bloc1{
+                    display: flex;
+                    width: 200%;
+                    gap: 20px;
+                    cursor: pointer;
+                     
+    
+                    .btn{
+                        display: flex;
+                        flex-direction: row;
+                        padding: 1%;
+                        align-items: center;
+                        gap: 1px;
+                        border-radius: 12px;
+                        box-shadow: 2px 2px 9px rgba(136, 135, 135, 0.26);
+                        &:hover{
+                            background: $couleur1;
+                            color: $couleur2;
+                        }
+    
+                        .Icon{
+                            width: 20px;
+                            height: 20px;
+                            // color: ;
+                        }
+                    }
+                }
+                .bloc2{
+                    display: flex;
+                    justify-content: end;
+                    text-align: left;
+                    width: 10%;
+                    height: auto;
+                       
+                }
+              
+              
+            }
+        }
+       
+        .Titre{
+            color: $couleur1;
+            font-weight: bold;
+
+        }
+       }
+
+       .author{
+         display: flex;
+         width: 100%;
+         height: auto;
+         align-items: center;
+         justify-content: space-between;
+         //  padding: 2%;
+        
+         .bloc1{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+            .authorPic{
+               
+                img{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+            }
+            .authorInfos{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                font-weight: 600;
+                align-items: center;
+                text-align: center;
+            }
+         }
+         .bloc2{
+            display: flex;
+            justify-content: end;
+            text-align: left;
+            height: auto;
+            margin-right: 2%;
+
+            .btnStyle{
+                padding-top: 10%;
+                padding-bottom: 10%;
+                padding-left: 20%;
+                padding-right: 20%;
+                color: $noir;
+                background: $couleur3;
+                font-weight: 600;
+                border: none;
+                border-radius: 12px;
+            }
+         }
+       }
+       .comment{
+        display: flex;
+        flex-direction: column;
+        gap:4px;
+        margin-top: 3%;
+        line-height: 1.2em;
+
+        .container{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border-radius: 12px;
+            width: 96%;
+            padding: 1%;
+            height: 100px;
+            border: 1px solid $couleur3;
+
+            p{  
+                text-align: center;
+                color: $couleur3;
+            }
+        }
+       }
+       .cartComment{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        top: 84%;
+        gap: 10px;
+        p{  
+            float: left;
+        }
+        .Bloc{
+            display: flex;
+            width: 94%;
+            height: auto;
+            justify-content: space-between;
+            gap:10px;
+            align-items: center;
+            padding: 0;
+            // padding-bottom: 4%;
+
+            h3{
+                padding: 1%;
+                color: $couleur2;
+                background: $couleur1;
+                border-radius: 50%;
+
+            }
+            input{
+                height: 30px;
+                width: 80%;
+                border-radius: 24px;
+                border: 1px solid $couleur3;
+                outline: none;
+                padding-left: 3%;
+                padding-right: 3%;
+                &::placeholder{
+                    color: $couleur3;
+                }
+            }
+        }
+
+        .btnComment{
+            color: $couleur3;
+            transition: ease all 1s;
+            &:hover{
+                color: $couleur1;
+                transform: scale(1.1em);
+                cursor: pointer;
+            }
+        }
+        
+       }
+    }
+}
+
+
+.cartPaginationLine{
+    padding-top: 5%;
+    width: 88%;
+    height: auto;
+    margin-left: 6%;
+
+   
+    h1{
+        font-weight: 900;
+        text-shadow: 2px 2Px 9px $couleur3;
+        margin-left: 2%;
+
+    }
+   .cartContainer{
+     width: 100%;
+
+    .otherCart{
+        width: 27%;
+        height:100%;
+         padding: 4% 10% 10% 4%;
+        z-index: 1;
+        // padding-bottom: 2%;
+         
+        box-shadow: 2px 2px 9px rgba(184, 183, 183, 0.432);
+        float: left;
+    
+            .pictBan{
+                width: 100%;
+                height: 60%;
+    
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    transform: scale(0.9);
+                    box-shadow: 4px 4px 9px white;
+                  }
+        
+            }
+        }
+   }
+    
+}

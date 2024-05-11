@@ -1,0 +1,28 @@
+$couleur1: #1e9ae2e5;
+$couleur2:white;
+$couleur3:rgba(194, 188, 188, 0.575);
+$noir:rgba(1, 0, 3, 0.897);
+$shadow:2px 2px 9px $couleur3;
+$titre1:60px bold;
+$titre2:30px ;
+$titre3:24px ;
+$titre4:16px;
+
+@mixin flexible{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+}
+@mixin layout{
+    width: 86%;
+    height: auto;
+    margin-left: 7%;
+    padding-bottom: 2%;
+    box-shadow: 2px 2px 9px rgba(200, 196, 196, 0.659);
+   
+}
